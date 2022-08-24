@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link rel="icon" type="image/png" href="img/iconlogo.png"/>
     <title>NortiN - Register</title>
 </head>
 
@@ -26,7 +27,7 @@
             </div>
 
             <div class="secao-dois-grupo1">
-                <p>Welcome to lorem..!</p>
+                <p>Welcome!</p>
 
                 <div class="secao-dois-butons">
                     <button class="login"><a  href="Login/index.html" class="login">Login</a></button>
@@ -48,16 +49,17 @@
                         <input type="text" value="" name="username" id="username" class="secao-dois-form-input" placeholder="Enter your User name" required/>
                     </div>
         
-                    <div class="secao-dois-form-campo ">
+                    <div class="secao-dois-form-campo">
                         <label for="password" class="titulo-campo">Password</label>
-                        <input type="password" value="" name="password" id="password" class="secao-dois-form-input" minlength="4" maxlength="12" placeholder="Enter your Password" required/>    
+                        
+                        <div class="secao-dois-form-campo-eye relative">
+                            <input type="password" value="" name="password" id="password" class="secao-dois-form-input" minlength="4" maxlength="12" placeholder="Enter your Password" required/>    
+                            <i class="fas fa-eye" id="iconEye" onclick="hideSenha()"></i>
+
+                            <i class="fas fa-eye-slash" id="iconEyeSlash" onclick="hideSenha()"></i>
+                        </div>
                     </div>
 
-                    <div class="secao-dois-form-campo-check">
-                        <input type="checkbox" value="" name="checkbox" id="checkbox" required/>    
-                        <label for="checkbox" id="titulo-checkbox" class="titulo-campo">Forgot password</label>
-                    </div>
-                    
                     <div class="btnValidar">
                         <button id="registerValidar" > Register </button>
                     </div>

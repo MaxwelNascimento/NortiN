@@ -131,7 +131,7 @@
 
 .secao-dois-form {
     width: 100%;
-    padding: 10px 100px;
+    padding: 10px 5vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -139,6 +139,7 @@
 
 .titulo-campo {
     font-size: 0.8em;
+    margin-bottom: 0.325em;
 }
 
 .secao-dois-form-campo {
@@ -147,30 +148,44 @@
     margin-top: 1.8em;
 }
 
+.secao-dois-form-campo-eye {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.relative{
+    position: relative;
+}
+
 #iconEye{
-    color: #9E896A;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    margin-right: 1.5vw;
+    color: #000;
+}
+
+#iconEyeSlash {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    margin-right: 1.5vw;
+    color: #000;
+    display: none;
 }
 
 .secao-dois-form-input {
     border: none;
     padding: 0.625em;
     border-radius: 9999px;
-    margin-top: 0.375em;
     border: 0.1875em solid #9E896A;
 }
 
-.secao-dois-form-campo-check {
-    display: flex;
-    flex-direction: row;
-        
-}
-
-#titulo-checkbox{
-    margin-left: 1em;
-}
-
 .secao-dois-form-input:focus {
-    background-color: #ffffffac;
+    background-color: #F8EDDD;
     box-shadow: 0 0 0 0;
     outline: 0;
 }
@@ -192,7 +207,86 @@
     cursor: pointer;
 }
 
-@media (max-width: 412px){
+
+@media (max-width: 834px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .secao-um{
+        width: 94%;
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .secao-dois {
+        width: 100%;
+    }
+
+    
+    .secao-dois-logotipo{
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+
+    .secao-dois-form{
+        padding: 2em 10em 0em 10em;
+    }
+
+    .btnValidar{
+        margin-top: 0.5em;
+        margin-bottom: 5em;
+    }
+    
+}
+
+@media (max-width: 650px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .secao-um{
+        width: 94%;
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .secao-dois {
+        width: 100%;
+    }
+
+    
+    .secao-dois-logotipo{
+        flex-direction: row;
+        padding-left: 2em;
+    }
+
+    .secao-dois-form{
+        padding: 2em 8em 0em 8em;
+    }
+
+    .btnValidar{
+        margin-top: 0.5em;
+        margin-bottom: 5em;
+    }
+    
+}
+
+@media (max-width: 536px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
 
     .secao-um{
         display: none;
@@ -213,5 +307,50 @@
     .secao-dois-logotipo{
         flex-direction: row;
     }
+
+    #iconEye{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        margin-right: 5vw;
+        color: #000000;
+    }
+
+}
+
+@media (max-width: 323px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .secao-um{
+        display: none;
+    }
+
+    .secao-dois {
+        width: 100%;
+    }
+
+    .secao-dois-form{
+        width: 100%;
+    }
+
+    .secao-dois-logotipo{
+        flex-direction: row;
+    }
+
+    #iconEye{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        margin-right: 5vw;
+        color: #000000;
+    }
+
 }
 
