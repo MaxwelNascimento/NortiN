@@ -213,7 +213,7 @@
     .container {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 150vh;
     }
 
     .secao-um{
@@ -280,7 +280,7 @@
     
 }
 
-@media (max-width: 536px){
+@media (max-width: 650px){
 
     .container {
         display: flex;
