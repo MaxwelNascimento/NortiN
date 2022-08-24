@@ -147,12 +147,26 @@
     margin-top: 1.8em;
 }
 
+#iconEye{
+    color: #9E896A;
+}
+
 .secao-dois-form-input {
     border: none;
     padding: 0.625em;
     border-radius: 9999px;
     margin-top: 0.375em;
     border: 0.1875em solid #9E896A;
+}
+
+.secao-dois-form-campo-check {
+    display: flex;
+    flex-direction: row;
+        
+}
+
+#titulo-checkbox{
+    margin-left: 1em;
 }
 
 .secao-dois-form-input:focus {
@@ -178,4 +192,26 @@
     cursor: pointer;
 }
 
+@media (max-width: 412px){
+
+    .secao-um{
+        display: none;
+    }
+
+    .secao-dois {
+        width: 100%;
+    }
+
+    .secao-dois-form{
+        padding: 3em;
+    }
+    
+    .secao-dois-form-campo-check{
+        margin-top: 0.8em;
+    }
+
+    .secao-dois-logotipo{
+        flex-direction: row;
+    }
+}
 
